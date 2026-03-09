@@ -8,7 +8,7 @@ Built around a strict dark aesthetic: pure black background, white typography, g
 
 ## Preview
 
-> Drop a screenshot or screen recording here.
+![alt text](image.png)
 
 ---
 
