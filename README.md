@@ -8,6 +8,8 @@ Built around a strict dark aesthetic: pure black background, white typography, g
 
 ## Preview
 
+[![Visit Live Site](https://img.shields.io/badge/Visit%20Live%20Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://your-project.vercel.app)
+
 ![alt text](image.png)
 
 ---
@@ -284,4 +286,4 @@ Things that would be straightforward additions:
 
 ## License
 
-MIT — do whatever you want with it.
+MIT License © 2026 Nathaniel Lemuel Chandra
