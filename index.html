@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EOS — Web3 at the Speed of Experience</title>
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <!-- Cursor follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero">
+
+    <!-- Fullscreen background video -->
+    <video
+      class="hero__video"
+      src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260217_030345_246c0224-10a4-422c-b324-070b7c0eceda.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+
+    <!-- 50% black overlay -->
+    <div class="hero__overlay"></div>
+
+    <!-- Bottom gradient fade into sections below -->
+    <div class="hero__fade"></div>
+
+    <!-- ── Navbar ── -->
+    <nav class="navbar">
+      <div class="navbar__left">
+        <img
+          src="https://logoipsum.com/artwork/344"
+          alt="LOGOIPSUM"
+          class="navbar__logo"
+          width="187"
+          height="25"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+        />
+        <span class="navbar__logo-text">LOGOIPSUM</span>
+        <div class="navbar__links">
+
+          <!-- Get Started -->
+          <div class="nav-item">
+            <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+              Get Started
+              <svg class="chevron" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Onboarding</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">⚡</span>
+                  <span>
+                    <strong>Quickstart</strong>
+                    <span>Up and running in under 5 minutes</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🗺</span>
+                  <span>
+                    <strong>Architecture Overview</strong>
+                    <span>How EOS fits into your stack</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🔑</span>
+                  <span>
+                    <strong>API Keys</strong>
+                    <span>Generate and manage credentials</span>
+                  </span>
+                </a>
+              </div>
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Guides</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">📦</span>
+                  <span>
+                    <strong>Deploy a Contract</strong>
+                    <span>End-to-end deployment walkthrough</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🔄</span>
+                  <span>
+                    <strong>Migrate from Ethereum</strong>
+                    <span>Move existing dApps with zero rewrites</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developers -->
+          <div class="nav-item">
+            <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+              Developers
+              <svg class="chevron" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Build</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">📖</span>
+                  <span>
+                    <strong>Documentation</strong>
+                    <span>Full SDK and API reference</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🧩</span>
+                  <span>
+                    <strong>SDK</strong>
+                    <span>JavaScript, Python, Rust clients</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🛠</span>
+                  <span>
+                    <strong>CLI Tools</strong>
+                    <span>Command-line interface for EOS</span>
+                  </span>
+                </a>
+              </div>
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Explore</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🧪</span>
+                  <span>
+                    <strong>Testnet Faucet</strong>
+                    <span>Get free testnet tokens instantly</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🔭</span>
+                  <span>
+                    <strong>Block Explorer</strong>
+                    <span>Inspect transactions and contracts</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">💻</span>
+                  <span>
+                    <strong>GitHub</strong>
+                    <span>Open source repos and examples</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div class="nav-item">
+            <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+              Features
+              <svg class="chevron" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Core Protocol</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">⚡</span>
+                  <span>
+                    <strong>Sub-second Finality</strong>
+                    <span>Transactions settle in &lt;400ms</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">∞</span>
+                  <span>
+                    <strong>Infinite Scale</strong>
+                    <span>Horizontal elasticity, no ceilings</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🛡</span>
+                  <span>
+                    <strong>Institutional Security</strong>
+                    <span>Formally verified cryptography</span>
+                  </span>
+                </a>
+              </div>
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Compatibility</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🔗</span>
+                  <span>
+                    <strong>EVM Compatible</strong>
+                    <span>Deploy Solidity contracts as-is</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🌉</span>
+                  <span>
+                    <strong>Cross-chain Bridge</strong>
+                    <span>Move assets across networks</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="nav-item">
+            <button class="nav-link" aria-expanded="false" aria-haspopup="true">
+              Resources
+              <svg class="chevron" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="nav-dropdown">
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Learn</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">📰</span>
+                  <span>
+                    <strong>Blog</strong>
+                    <span>Updates, deep dives, and research</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🎓</span>
+                  <span>
+                    <strong>Academy</strong>
+                    <span>Structured courses for builders</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">📑</span>
+                  <span>
+                    <strong>Whitepaper</strong>
+                    <span>The full technical specification</span>
+                  </span>
+                </a>
+              </div>
+              <div class="nav-dropdown__section">
+                <p class="nav-dropdown__label">Community</p>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">💬</span>
+                  <span>
+                    <strong>Discord</strong>
+                    <span>Chat with the core team</span>
+                  </span>
+                </a>
+                <a href="#" class="nav-dropdown__item">
+                  <span class="nav-dropdown__icon">🐦</span>
+                  <span>
+                    <strong>Twitter / X</strong>
+                    <span>Follow for announcements</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="navbar__right">
+        <button class="pill-btn pill-btn--outline">
+          <span class="pill-btn__glow"></span>
+          <span class="pill-btn__inner">Join Waitlist</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ── Hero Content ── -->
+    <div class="hero__content">
+
+      <!-- Badge -->
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        <span class="hero__badge-label">Early access available from</span>
+        <span class="hero__badge-date">&nbsp;May 1, 2026</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="hero__heading reveal">Web3 at the Speed of Experience</h1>
+
+      <!-- Subtitle -->
+      <p class="hero__subtitle reveal">
+        Powering seamless experiences and real-time connections, EOS is the base for creators
+        who move with purpose, leveraging resilience, speed, and scale to shape the future.
+      </p>
+
+      <!-- CTA Button -->
+      <button class="pill-btn pill-btn--solid reveal">
+        <span class="pill-btn__glow"></span>
+        <span class="pill-btn__inner pill-btn__inner--dark">Join Waitlist</span>
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       TRUSTED BY TICKER
+  ═══════════════════════════════════════════ -->
+  <section class="ticker">
+    <div class="ticker__track">
+      <!-- Duplicated for seamless loop -->
+      <div class="ticker__list" aria-hidden="true">
+        <span class="ticker__item ticker__item--bold">VERTEX</span>
+        <span class="ticker__item ticker__item--light ticker__item--italic">Quantum</span>
+        <span class="ticker__item ticker__item--medium ticker__item--tracking">Nexus.</span>
+        <span class="ticker__item ticker__item--thin ticker__item--widest">O B S I D I A N</span>
+        <span class="ticker__item ticker__item--semibold">Lumina</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item ticker__item--bold">VERTEX</span>
+        <span class="ticker__item ticker__item--light ticker__item--italic">Quantum</span>
+        <span class="ticker__item ticker__item--medium ticker__item--tracking">Nexus.</span>
+        <span class="ticker__item ticker__item--thin ticker__item--widest">O B S I D I A N</span>
+        <span class="ticker__item ticker__item--semibold">Lumina</span>
+        <span class="ticker__sep">✦</span>
+      </div>
+      <div class="ticker__list" aria-hidden="true">
+        <span class="ticker__item ticker__item--bold">VERTEX</span>
+        <span class="ticker__item ticker__item--light ticker__item--italic">Quantum</span>
+        <span class="ticker__item ticker__item--medium ticker__item--tracking">Nexus.</span>
+        <span class="ticker__item ticker__item--thin ticker__item--widest">O B S I D I A N</span>
+        <span class="ticker__item ticker__item--semibold">Lumina</span>
+        <span class="ticker__sep">✦</span>
+        <span class="ticker__item ticker__item--bold">VERTEX</span>
+        <span class="ticker__item ticker__item--light ticker__item--italic">Quantum</span>
+        <span class="ticker__item ticker__item--medium ticker__item--tracking">Nexus.</span>
+        <span class="ticker__item ticker__item--thin ticker__item--widest">O B S I D I A N</span>
+        <span class="ticker__item ticker__item--semibold">Lumina</span>
+        <span class="ticker__sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FEATURES BENTO BOX
+  ═══════════════════════════════════════════ -->
+  <section class="features">
+
+    <!-- Ambient background blur -->
+    <div class="features__ambient"></div>
+
+    <div class="features__header reveal">
+      <h2 class="features__heading gradient-text-vertical">Engineered for the Next Generation</h2>
+      <p class="features__subtitle">Four pillars that define what a modern blockchain infrastructure should be.</p>
+    </div>
+
+    <div class="features__grid">
+
+      <!-- Card 1 — Large (span 2) -->
+      <div class="glass-card glass-card--large reveal">
+        <div class="glass-card__radial glass-card__radial--tr"></div>
+        <div class="glass-card__body">
+          <span class="glass-card__tag">01</span>
+          <h3 class="glass-card__title">Sub-second Finality</h3>
+          <p class="glass-card__desc">Transactions confirm before users notice — true real-time finality without compromise.</p>
+        </div>
+        <div class="glass-card__icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="rgba(255,255,255,0.12)" stroke-width="1"/><path d="M16 24l6 6 10-12" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <!-- Card 2 — Small -->
+      <div class="glass-card glass-card--small reveal">
+        <div class="glass-card__body">
+          <span class="glass-card__tag">02</span>
+          <h3 class="glass-card__title">Infinite Scale</h3>
+          <p class="glass-card__desc">Horizontally elastic — scales to any demand without architectural changes.</p>
+        </div>
+        <div class="glass-card__icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="14" height="14" rx="2" stroke="rgba(255,255,255,0.5)" stroke-width="1"/><rect x="22" y="4" width="14" height="14" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="1"/><rect x="4" y="22" width="14" height="14" rx="2" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><rect x="22" y="22" width="14" height="14" rx="2" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>
+        </div>
+      </div>
+
+      <!-- Card 3 — Small -->
+      <div class="glass-card glass-card--small reveal">
+        <div class="glass-card__body">
+          <span class="glass-card__tag">03</span>
+          <h3 class="glass-card__title">Institutional Security</h3>
+          <p class="glass-card__desc">Enterprise-grade cryptography and formal verification built into the protocol layer.</p>
+        </div>
+        <div class="glass-card__icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4l14 6v10c0 8-6 14-14 16C12 34 6 28 6 20V10l14-6z" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/><path d="M14 20l4 4 8-8" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <!-- Card 4 — Large (span 2) -->
+      <div class="glass-card glass-card--large reveal">
+        <div class="glass-card__radial glass-card__radial--bl"></div>
+        <div class="glass-card__body">
+          <span class="glass-card__tag">04</span>
+          <h3 class="glass-card__title">Fully EVM Compatible</h3>
+          <p class="glass-card__desc">Deploy any existing Solidity smart contract with zero modifications — your tools work as-is.</p>
+        </div>
+        <div class="glass-card__icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><polygon points="24,6 42,18 42,30 24,42 6,30 6,18" stroke="rgba(255,255,255,0.12)" stroke-width="1" fill="none"/><polygon points="24,14 34,22 34,30 24,38 14,30 14,22" stroke="rgba(255,255,255,0.4)" stroke-width="1" fill="none"/><circle cx="24" cy="24" r="4" fill="rgba(255,255,255,0.2)"/></svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       METRICS SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="metrics reveal">
+    <div class="metrics__col">
+      <span class="metrics__number gradient-text" data-count="100000" data-suffix="k+" data-divisor="1000">100k+</span>
+      <span class="metrics__label">Transactions Per Second</span>
+    </div>
+    <div class="metrics__divider"></div>
+    <div class="metrics__col">
+      <span class="metrics__number gradient-text" data-count="400" data-prefix="&lt;" data-suffix="ms">&#60;400ms</span>
+      <span class="metrics__label">Time to Finality</span>
+    </div>
+    <div class="metrics__divider"></div>
+    <div class="metrics__col">
+      <span class="metrics__number gradient-text" data-count="0.001" data-prefix="$" data-decimals="3">$0.001</span>
+      <span class="metrics__label">Average Transaction Fee</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       DEVELOPER SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="developer">
+
+    <!-- CSS grid pattern background -->
+    <div class="developer__grid-bg"></div>
+
+    <!-- Content stack -->
+    <div class="developer__content">
+
+      <button class="dev-pill reveal">Developer First</button>
+
+      <h2 class="developer__heading reveal">Connect in lines, not days.</h2>
+
+      <p class="developer__subtitle reveal">
+        Our unified SDK abstracts away the complexity of Web3, giving you clean,
+        idiomatic APIs that feel as natural as any modern framework.
+      </p>
+
+      <a href="#" class="developer__link reveal">
+        Read Documentation
+        <span class="developer__link-arrow">→</span>
+      </a>
+
+      <!-- Code Editor Component -->
+      <div class="code-editor-wrap reveal">
+        <div class="code-editor-ambient"></div>
+        <div class="code-editor">
+          <!-- SVG noise texture overlay -->
+          <svg class="code-editor__noise" xmlns="http://www.w3.org/2000/svg">
+            <filter id="noise">
+              <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+              <feColorMatrix type="saturate" values="0"/>
+            </filter>
+            <rect width="100%" height="100%" filter="url(#noise)" opacity="0.04"/>
+          </svg>
+          <!-- Window header -->
+          <div class="code-editor__header">
+            <div class="code-editor__dots">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+            </div>
+            <span class="code-editor__filename">init.ts</span>
+          </div>
+          <!-- Code content -->
+          <div class="code-editor__body">
+            <pre class="code-editor__pre"><code><span class="c-comment">// Initialize EOS Web3 client</span>
+<span class="c-keyword">import</span> <span class="c-punctuation">{ </span><span class="c-class">EOSClient</span><span class="c-punctuation">, </span><span class="c-class">Transaction</span><span class="c-punctuation"> }</span> <span class="c-keyword">from</span> <span class="c-string">'@eos/sdk'</span><span class="c-punctuation">;</span>
+
+<span class="c-keyword">const</span> <span class="c-variable">client</span> <span class="c-punctuation">=</span> <span class="c-keyword">new</span> <span class="c-class">EOSClient</span><span class="c-punctuation">({</span>
+  <span class="c-property">network</span><span class="c-punctuation">:</span> <span class="c-string">'mainnet'</span><span class="c-punctuation">,</span>
+  <span class="c-property">apiKey</span><span class="c-punctuation">:</span> <span class="c-variable">process</span><span class="c-punctuation">.</span><span class="c-property">env</span><span class="c-punctuation">.</span><span class="c-class">EOS_API_KEY</span><span class="c-punctuation">,</span>
+<span class="c-punctuation">});</span>
+
+<span class="c-comment">// Build &amp; send a transaction</span>
+<span class="c-keyword">async function</span> <span class="c-fn">sendTransfer</span><span class="c-punctuation">(</span>
+  <span class="c-variable">to</span><span class="c-punctuation">:</span> <span class="c-class">string</span><span class="c-punctuation">,</span>
+  <span class="c-variable">amount</span><span class="c-punctuation">:</span> <span class="c-class">bigint</span>
+<span class="c-punctuation">)</span><span class="c-punctuation">:</span> <span class="c-class">Promise</span><span class="c-punctuation">&lt;</span><span class="c-class">Transaction</span><span class="c-punctuation">&gt; {</span>
+  <span class="c-keyword">const</span> <span class="c-variable">tx</span> <span class="c-punctuation">=</span> <span class="c-keyword">await</span> <span class="c-variable">client</span><span class="c-punctuation">.</span><span class="c-fn">transaction</span><span class="c-punctuation">.</span><span class="c-fn">create</span><span class="c-punctuation">({</span>
+    <span class="c-property">to</span><span class="c-punctuation">,</span>
+    <span class="c-property">value</span><span class="c-punctuation">:</span> <span class="c-variable">amount</span><span class="c-punctuation">,</span>
+    <span class="c-property">gasLimit</span><span class="c-punctuation">:</span> <span class="c-class">BigInt</span><span class="c-punctuation">(</span><span class="c-number">21000</span><span class="c-punctuation">),</span>
+  <span class="c-punctuation">});</span>
+
+  <span class="c-keyword">const</span> <span class="c-variable">receipt</span> <span class="c-punctuation">=</span> <span class="c-keyword">await</span> <span class="c-variable">tx</span><span class="c-punctuation">.</span><span class="c-fn">sign</span><span class="c-punctuation">().</span><span class="c-fn">send</span><span class="c-punctuation">();</span>
+  <span class="c-keyword">const</span> <span class="c-variable">confirmed</span> <span class="c-punctuation">=</span> <span class="c-variable">receipt</span><span class="c-punctuation">.</span><span class="c-property">status</span> <span class="c-punctuation">===</span> <span class="c-boolean">true</span><span class="c-punctuation">;</span>
+
+  <span class="c-keyword">if</span> <span class="c-punctuation">(!</span><span class="c-variable">confirmed</span><span class="c-punctuation">)</span> <span class="c-keyword">throw new</span> <span class="c-class">Error</span><span class="c-punctuation">(</span><span class="c-string">'Transaction failed'</span><span class="c-punctuation">);</span>
+  <span class="c-keyword">return</span> <span class="c-variable">receipt</span><span class="c-punctuation">;</span>
+<span class="c-punctuation">}</span>
+</code></pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       BOTTOM CTA
+  ═══════════════════════════════════════════ -->
+  <section class="bottom-cta">
+    <div class="bottom-cta__ambient"></div>
+    <h2 class="bottom-cta__heading gradient-text reveal">Ready to build the future?</h2>
+    <p class="bottom-cta__subtitle reveal">
+      Join thousands of creators and developers shaping the next generation of the internet.
+    </p>
+    <button class="pill-btn pill-btn--solid pill-btn--large reveal">
+      <span class="pill-btn__glow"></span>
+      <span class="pill-btn__inner pill-btn__inner--dark">Join Waitlist</span>
+    </button>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__left">
+      <img
+        src="https://logoipsum.com/artwork/344"
+        alt="LOGOIPSUM"
+        class="footer__logo"
+        width="140"
+        height="20"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+      />
+      <span class="footer__logo-text">LOGOIPSUM</span>
+    </div>
+    <div class="footer__center">
+      <a href="#" class="footer__link">Privacy Policy</a>
+      <a href="#" class="footer__link">Terms of Service</a>
+      <a href="#" class="footer__link">Twitter</a>
+      <a href="#" class="footer__link">Discord</a>
+    </div>
+    <div class="footer__right">
+      <span class="footer__copy">&copy; 2026 EOS Network. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
