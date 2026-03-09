@@ -1,4 +1,4 @@
-# EOS — Web3 Landing Page
+# Obsidian — Web3 Landing Page
 
 A fully static, zero-dependency Web3 landing page. Three files. No npm, no bundler, no framework — just HTML, CSS, and a small vanilla JS file you can read in five minutes.
 
@@ -10,7 +10,7 @@ Built around a strict dark aesthetic: pure black background, white typography, g
 
 [![Visit Live Site](https://img.shields.io/badge/Visit%20Live%20Site-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://obsidian-landing.vercel.app/)
 
-![alt text](image.png)
+![alt text](image.png)  
 
 ---
 
